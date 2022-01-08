@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="data.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="form.html">Register</a></li>
+                <li><a href="data.html">Student</a></li>
+                <div class="search"><input type="text" name="search" id="search" placeholder="Search Something..."></div>
+            </ul>
+        </nav>        	
+        </header>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="id">Student id</label>
+                        <input type="number" name="id" id="id">
+                    </div>
+                    <div>
+                        <label for="studentname">Student Name</label>
+                        <input type="text" name="studentname" id="studentname">
+                    </div>
+        
+                    <div>
+                        <label for="perBook">Book Name</label>
+                        <input type="text" name="perBook" id="perBook">
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="studentList">
+                        <thead>
+                            <tr>
+                                <th>Student id</th>
+                                <th>Student Name</th>
+                                <th>Book name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
